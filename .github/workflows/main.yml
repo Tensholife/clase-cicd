@@ -1,18 +1,17 @@
 name: SayHello
 
 on:
-  push:
-    branches:
-      - main
-      
+ push:
+   branches:
+     - main
+    
 jobs:
   welcome:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Download your code
-        uses: actions/checkout@v2
+     runs-on: ubuntu-latest
+     
+     steps:
+       - name: Download your code
+         uses: actions/checkout@v2
 
-      - name: Say something
-          run: echo "hello world"
-          
+       - name: Say something
+         run: echo "hello world"
