@@ -21,7 +21,7 @@ jobs:
 
       steps:
        - name: Download your code 📩
-         uses: action/checkout@v2
+         uses: actions/checkout@v2
 
        - name: Verify develop branch 🔔
          if: ${{ github.ref == 'refs/heads/develop'}}
